@@ -18,7 +18,9 @@ public class schedulerService {
         String spom;
         log.info("   timer_tick ....");
         for(int i=0; i<4; i++) {
-            log.info("   Rack[" + i + "]:   LastCall: " + gd.Datumy.get(i));
+            log.info("   Rack[" + i + "]:   LastCall: " + gd.Datumy.get(i)
+                    + "  AVAILABILITY: " + gd.availability.get(i)
+                    + " / " + gd.availability.get(i).ordinal());
         }
     }
 }

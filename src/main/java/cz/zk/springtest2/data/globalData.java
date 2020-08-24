@@ -10,5 +10,11 @@ import java.util.ArrayList;
 public class globalData {
 
     public ArrayList<String> Datumy = new ArrayList<>();
+    public ArrayList<AVAILABILITY> availability = new ArrayList<>();
 
+    public enum AVAILABILITY {
+        AVAILABLE,
+        INUSE,
+        DISCONNECTED
+    }
 }

@@ -28,6 +28,7 @@ public class heartbeatController {
             log.info("+++ ID = " + nid);
             if((nid >= 0) && (nid < 4)) {
                 gd.Datumy.set(nid, LocalDateTime.now().toString());
+                gd.availability.set(nid, globalData.AVAILABILITY.INUSE);
             }
         }
         catch(Exception ex) {

@@ -21,6 +21,12 @@ public class initBean implements InitializingBean {
         gd.Datumy.add("String 2");
         gd.Datumy.add("String 3");
         gd.Datumy.add("String 4");
+
+        gd.availability.add(globalData.AVAILABILITY.DISCONNECTED);
+        gd.availability.add(globalData.AVAILABILITY.DISCONNECTED);
+        gd.availability.add(globalData.AVAILABILITY.DISCONNECTED);
+        gd.availability.add(globalData.AVAILABILITY.DISCONNECTED);
+
     }
 
 }
