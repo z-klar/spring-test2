@@ -13,7 +13,7 @@ import java.util.List;
 
 @Slf4j
 @Component
-public class svc_main {
+public class mainService {
 
     public boolean  srvPingAddr(String ipAddr) throws IOException {
 
@@ -23,6 +23,7 @@ public class svc_main {
         if(OS.contains("windows")) spar = "-n";
         else if(OS.contains("linux")) spar = "-c";
         else throw new IOException("Unknown OS !!!");
+
         String s = null;
         List<String> commands = new ArrayList<String>();
         commands.add("ping");

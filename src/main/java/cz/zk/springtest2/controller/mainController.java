@@ -1,6 +1,6 @@
 package cz.zk.springtest2.controller;
 
-import cz.zk.springtest2.service.svc_main;
+import cz.zk.springtest2.service.mainService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/main")
-public class main {
+public class mainController {
 
     @Autowired
-    private svc_main serviceMain;
+    private mainService serviceMain;
 
     @RequestMapping(value ="/{id}")
     public ResponseEntity<Object> getSingleOutput(@PathVariable String id) {
